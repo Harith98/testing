@@ -1,0 +1,111 @@
+---
+layout: default
+title: Onboarding Plan Developers
+parent: Onboarding and Know-How Transfer
+grand_parent: Organizational
+nav_order: 1
+file: content/10_organizational/20_onboarding/onboarding-plan-devs.md
+date: 2024-05-23T13:08:19+00:00
+commit: b5f6e8d4059d6cacb7ddf1c5f9739c1d949336ab
+---
+# Onboarding Plan for Developers
+{: .no_toc }
+
+This page describes which activities, resources and preconditions are needed to guarantee a smooth onboarding of new Integration Developers to the MuleSoft project team.
+{: .fs-6 .fw-300 }
+
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
+## Prerequisites
+The following accounts and software are required for developers in the team. Corresponding contacts are listed in the table if independent processing/procurement is not possible.
+
+### Accounts
+
+| Item                     | Description                                                           | Additional Info                                                                                                                                                                                                                                                                                                                                                          | Responsible                                           |
+|--------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| ServiceNow               | Incident Management Tool                                              | <https://bbraunp.service-now.com/>{:target="_blank"}                                                                                                                                                                                                                                                                                                                     | Service Desk if not already activated                 |
+| Anypoint Platform        | MuleSoft Portal for Developers and Admins                             | Request account in [ServiceNow](https://bbraunp.service-now.com/serviceportal?id=sc_cat_item&sys_id=9cb90fd0db339090ae6330d6f49619a6){:target="_blank"} <br> SSO Login link to [Anypoint Platform](https://eu1.anypoint.mulesoft.com/accounts/login/b-braun){:target="_blank"}                                                                                           | You                                                   |
+| MuleSoft Support Account | Account to raise support tickets and get access to download resources | MuleSoft and Salesforce [Support Portal](https://help.salesforce.com/s/?language=en_US){:target="_blank"}                                                                                                                                                                                                                                                                | Stefan Stützer                                        |
+| Jira                     | Account for our Issue and Bugtracking software                        | Request Jira license in [Service Now](https://bbraunp.service-now.com/serviceportal?id=sc_cat_item_guide&sys_id=6f4f94db1b450650b2e5eb536b4bcbf8){:target="_blank"} <br> [MuleSoft](https://jira.bbraun.com/projects/MUL/){:target="_blank"} Jira Project Room                                                                                                           | You                                                   |
+| Shared Mailbox Mailing   | User has to be added to Mailing lists                                 |                                                                                                                                                                                                                                                                                                                                                                          | Stefan Stützer <br> Mohd Hafiz Ramly                  |
+| GitHub Enterprise        | Our central code repository                                           | Request User in [ServiceNow](https://bbraunp.service-now.com/serviceportal?id=sc_cat_item&sys_id=eb0e5c0b1b8c0110f2ec1f8b8b4bcb69&sysparm_category=1132eac11bbd1c10fb8a4222dd4bcbbe){:target="_blank"} <br> [MuleSoft](https://code.bbraun.io/IT-BS-MuleSoft){:target="_blank"} GitHub Space <br> Documentation: <https://docs.code.bbraun.io/github/>{:target="_blank"} | You / Stefan Stützer                                  |
+| Artifactory              | Our artifact repository                                               | <https://artifacts.bbraun.io/ui/packages>{:target="_blank"} <br> Documentation: <https://docs.code.bbraun.io/artifactory/>{:target="_blank"} <br> [Self-service](https://code.bbraun.io/dev-services/artifactory-management/blob/prd/CONTRIBUTING.md){:target="_blank"} to add users to the team                                                                         | You                                                   |
+| Postman                  | A REST client                                                         | <https://www.postman.com/downloads/>{:target="_blank"}                                                                                                                                                                                                                                                                                                                   | You / Ask Stefan Stützer to assign a business licence |
+| Teams                    | Teams channels as our central collaboration tool                      |                                                                                                                                                                                                                                                                                                                                                                          | Stefan Stützer to add you to our MuleSoft team.       |
+| Snyk                     | Security Check Tool                                                   | <https://app.snyk.io/org/it-bs-mulesoft>{:target="_blank"} <br> Add new member: <https://app.snyk.io/org/it-bs-mulesoft/manage/members>{:target="_blank"}                                                                                                                                                                                                                | Any team member can add you                           |
+| VPN Access               | Get access to B. Braun VPN via RAS Token                              | Create a RAS request via the [Pega Platform](https://bbraunp.service-now.com/serviceportal?id=kb_article_view&sys_kb_id=ba91a9bb1b5e0190e65520aeab4bcb5e){:target="_blank"} <br> Download and register [SecurID app](https://bbraun.auth-eu.securid.com/cloudsso/#/login){:target="_blank"}                                                                              | You                                                   |
+
+
+### Software
+
+| Item            | Description      | Additional Info                                                              | Responsible |
+|-----------------|------------------|------------------------------------------------------------------------------|-------------|
+| JDK 8           | Latest JDK 8     | <https://adoptopenjdk.net/>{:target="_blank"}                                | You         |
+| Anypoint Studio | MuleSoft IDE     | Download in [Support Portal](https://help.mulesoft.com/s/){:target="_blank"} | You         |
+| KeePass         | Password Manager | Keepass - Password storage                                                   | You         |
+
+## Onboarding Schedule
+### Your first 4 weeks
+This schedule should help you to organise your activities within the first 4 weeks.
+
+#### Week 1
+
+| Topic                                                                                  | Description                                                                                                                                                                                 | Resources / Links                                                                                                                         | Responsible / Mentor                                |
+|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Meet your mentor                                                                       | All new team members are supported by a mentor during the first 4 weeks. The mentor is the first point of contact for any questions or problems you may have during your onboarding process |                                                                                                                                           | Stefan Stützer                                      |
+| Make sure all prerequisites are fulfilled                                              | See table above. If not all accesses are granted get in contact with responsible persons                                                                                                    |                                                                                                                                           | You                                                 |
+| Make sure you got all invitations for regular meetings. Join these meetings from day 1 | Regular meetings are: Daily, Planning, Estimation / Refinement, Knowledge Transfer Session, Dev Approvals (On Demand)                                                                       |                                                                                                                                           | Each team member can forward the invitations to you |
+| Understand our project setup                                                           | Get familiar with our project management                                                                                                                                                    | [Organizational](../../10_organizational/)                                                                                                | You                                                 |
+| Attend "Getting Started with Anypoint Platform"                                        | Get a hands-on introduction to Anypoint Platform™ and learn the basics to design, build, deploy, and manage APIs without writing any code.                                                  | [Course on Trailhead](https://trailhead.salesforce.com/de/users/strailhead/trailmixes/anypoint-platform-development-fundamentals-max-150) | You                                                 |
+
+
+#### Week 2
+
+| Topic                                        | Description                                                                                | Resources / Links                                                                                                                                       | Responsible / Mentor |
+|----------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Attend *MuleSoft.U Development Fundamentals* | Gives you an introduction and overview of basic concepts of the MuleSoft Anypoint Platfrom | [Course on Trailhead](https://trailhead.salesforce.com/de/users/strailhead/trailmixes/getting-started-with-anypoint-platform-dex-401){:target="_blank"} | You / Stefan Stützer |
+
+#### Week 3
+
+| Topic                                        | Description                                                                                | Resources / Links                                                                                                                                       | Responsible / Mentor |
+|----------------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Attend *MuleSoft.U Development Fundamentals* | Gives you an introduction and overview of basic concepts of the MuleSoft Anypoint Platfrom | [Course on Trailhead](https://trailhead.salesforce.com/de/users/strailhead/trailmixes/getting-started-with-anypoint-platform-dex-401){:target="_blank"} | You / Stefan Stützer |
+| Setup Local MuleSoft Installation            |                                                                                            | TODO                                                                                                                                                    | You                  |
+| Watch Know How Transfer session              | Have a look at our recorded Know How transfer sessions                                     | [Know-How Transfer](./know-how-transfer)                                                                                                                | You                  |
+
+#### Week 4
+
+| Topic                              | Description                                                                                  | Resources / Links                                                                                                                                                                                                                                                                                                                                             | Responsible / Mentor   |
+|------------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| Learn DataWeave                    | Getting started with the DataWeave Quickstart Guide                                          | <https://developer.mulesoft.com/tutorials-and-howtos/dataweave/getting-started-with-dataweave-part-1>{:target="_blank"} <br> <https://docs.mulesoft.com/mule-runtime/4.3/dataweave-quickstart>{:target="_blank"} <br> <https://developer.mulesoft.com/learn/dataweave#tutorial>{:target="_blank"}  (click Tutorial in right corner, right next to Playground) | You                    |
+| Understand our Development process | Get some insights in our development process, best practices and CI/CD setup                 | [Development Process](../10_agile-projectmanagement/development-process) <br> [Developer Documentation](../../20_development/)                                                                                                                                                                                                                                | You / Stefan Stützer   |
+| Understand our MuleSoft Setup      | Understand the setup of our VPN, VPC, load balancers and the rest of the infrastructure      | [DevOps](../../30_devops/) <br> [CloudHub](../../40_cloudhub/)                                                                                                                                                                                                                                                                                                | You / Mohd Hafiz Ramly |
+| Your first implementation task     | Get hands-on by start implementing your first ticket. Your mentor will support you for sure. | Jira                                                                                                                                                                                                                                                                                                                                                          | You / Stefan Stützer   |
+
+### Your first 3 months
+
+| Topic                              | Description                                                                                                                                                                                           | Resources / Links                                                                                                                   | Responsible / Mentor |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Attend *API Security Fundamentals* | This 90-minute course covers the core threats to APIs and how to prevent breaches. Learn the OWASP API Security Top 10, examine real-world API attacks, and understand the 3 Pillars of API Security. | [APISec University self-study online training course page](https://university.apisec.ai/offers/9AcMLqyB/checkout){:target="_blank"} | You                  |
+
+### Your first 6 months
+
+| Topic                                          | Description                                                                                                                                                   | Resources / Links                                                                                                                   | Responsible / Mentor |
+|------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Attend *OWASP API Security Top 10 and Beyond!* | This 3-hour course provides a deep-dive into the 2023 edition of the OWASP API Security Top 10 - and covers key concepts that didn’t make it into the Top 10. | [APISec University self-study online training course page](https://university.apisec.ai/offers/SDC3PwXe/checkout){:target="_blank"} | You                  |
+
+### Your first year
+
+| Topic                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                      | Resources / Links                                                                                                                   | Responsible / Mentor |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Attend *API Documentation Best Practices* | This 2-hour course covers everything you need to know to create, automate, and publish API documentation your developers, partners and users will love. You’ll also learn why API documentation is the foundation for strong governance, effective API security, and achieving your API business goals.                                                                                                          | [APISec University self-study online training course page](https://university.apisec.ai/offers/z4og9W5q/checkout){:target="_blank"} | You                  |
+| Take MCD Level 1 certification            | The Salesforce Certified MuleSoft Developer I credential is designed for individuals who have experience working on basic Mule 4 projects with guidance and supervision. The Salesforce Certified MuleSoft Developer I is able to to design, build, test, debug, deploy, and manage basic application programming interfaces (APIs) and integrations, moving from Anypoint Platform to Anypoint Studio and back. | [Trailhead Certification Page](https://trailhead.salesforce.com/de/credentials/mulesoftdeveloperi){:target="_blank"}                | You                  |
+
+
