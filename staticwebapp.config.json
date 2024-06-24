@@ -1,0 +1,46 @@
+{
+    "routes": [
+        {
+            "route": "/login",
+            "rewrite": "/.auth/login/aad"
+        },
+        {
+            "route": "/assets",
+            "allowedRoles": [
+                "anonymous"
+            ]
+        },
+        {
+            "route": "/404.html",
+            "allowedRoles": [
+                "anonymous"
+            ]
+        },
+        {
+            "route": "/*",
+            "allowedRoles": [
+                "authenticated"
+            ]
+        }
+    ],
+    "responseOverrides": {
+        "401": {
+            "redirect": "/login",
+            "statusCode": 302
+        },
+        "404": {
+            "rewrite": "/404.html"
+        }
+    },
+    "auth": {
+        "identityProviders": {
+            "azureActiveDirectory": {
+                "registration": {
+                    "openIdIssuer": "https://login.microsoftonline.com/15d1bef2-0a6a-46f9-be4c-023279325e51/v2.0",
+                    "clientIdSettingName": "AZURE_CLIENT_ID",
+                    "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+                }
+            }
+        }
+    }
+}
